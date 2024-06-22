@@ -15,15 +15,19 @@
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+   
 }
 
 .table th {
   background-color: #432818;
   color: #ddd;
+  font-size: 1.1rem;
 }
 
 .table td {
-    background-color: #ede0d4;
+    background-color: #ddca7d;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 .item-cell {
   display: grid;
@@ -37,6 +41,28 @@
   object-fit: cover;
   margin-right: 10px;
 }
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-aligning quantity controls */
+}
+
+.quantity-control button {
+  background-color: #ddca7d;
+  color: black;
+  border: 1px solid black;
+  padding: 5px ;
+  cursor: pointer;
+  border-radius: 4px;
+  margin:  12px;
+}
+
+ .quantity-control button:hover {
+    border: 1px solid #ddd;
+background-color: black;
+color: #ddd;
+ }
 
 .delete-button {
   background: none;
@@ -61,13 +87,14 @@
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #ede0d4;
+  background-color: #ddca7d;
+  /* color: white; */
 }
 
 .apply-button, .checkout-button {
   padding: 8px 16px;
   border: none;
-  background-color: #ede0d4;
+  background-color: #ddca7d;
   color: black;
   cursor: pointer;
   border-radius: 4px;
@@ -98,4 +125,5 @@
   gap: 367px;
   background-color: #432818;
   color: #ddd;
+  font-size: 1rem;
 }

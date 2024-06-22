@@ -17,6 +17,19 @@ import { useState } from 'react';
     setDiscount(discountValue);
   };
 
+const handleQuantityChange = (id, delta) => {
+    const updatedItems = items.map((item) =>
+      item.id === id ? { ...item, quantity: Math.max(item.quantity + delta, 1) } : item
+    );
+    setItems(updatedItems);
+  };
+
+
+
+
+
+
+  
  const totalAmount = items.reduce((total, item) => total + item.price * item.quantity, 0);
   const discountedTotal = totalAmount - discount;
 
@@ -40,8 +53,20 @@ import { useState } from 'react';
                 <span>{item.name}</span>
               </td>
               <td>Rs {item.price.toFixed(2)}</td>
-              <td>{item.quantity}</td>
+
+
+               <td>
+                <div className="quantity-control">
+                  <button onClick={() => handleQuantityChange(item.id, -1)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => handleQuantityChange(item.id, 1)}>+</button>
+                </div>
+              </td>
               <td>Rs {(item.price * item.quantity).toFixed(2)}</td>
+              
+
+
+
               <td>
                 <button className="delete-button" onClick={() => onDelete(item.id)}>
                   <FaTrashAlt />
