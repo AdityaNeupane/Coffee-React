@@ -1,0 +1,37 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 800px;
+}
+
+ 
+.navbar-back-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar-back-button:hover {
+  background-color: black;
+  color: white;
+}

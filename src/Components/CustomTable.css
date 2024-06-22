@@ -1,0 +1,101 @@
+ 
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+   
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #432818;
+  color: #ddd;
+}
+
+.table td {
+    background-color: #ede0d4;
+}
+.item-cell {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 90px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: darkred;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1.5fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between input and buttons */
+}
+
+.coupon-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ede0d4;
+}
+
+.apply-button, .checkout-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ede0d4;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.apply-button:hover, .checkout-button:hover {
+  background-color: #432818;
+  color: #ddd;
+}
+
+.footer-label {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.footer-value {
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+     padding: 10px ;
+  border-top: 1px solid #ddd;
+  /* row-gap: 20px; */
+  gap: 367px;
+  background-color: #432818;
+  color: #ddd;
+}
